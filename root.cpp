@@ -10,11 +10,11 @@ int main() {
     double root1, root2;
     
     cout << "Enter coefficients a, b and c: ";
-    cin >> a >> b >> c
+    cin >> a >> b >> c;
     
     discriminant = b*b - 4*a*c;
     
-    if (dscriminant > 0) {
+    if (discriminant > 0) {
         root1 = (-b + sqrt(discriminant)) / (2*a);
         root2 = (-b - sqrt(discriminant)) / (2*a);
         cout << fixed << setprecision(4);
@@ -29,4 +29,5 @@ int main() {
     else {
         cout << "No real roots." << endl;
     }
+    return 0;
 }
